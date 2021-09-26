@@ -15,7 +15,7 @@ import static com.acme.dbo.restassured.EndPoint.DBO_API;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class RestAssuredAccountTest {
+public class RestAssuredClientTest {
     private RequestSpecification givenRequest;
 
     @BeforeEach
