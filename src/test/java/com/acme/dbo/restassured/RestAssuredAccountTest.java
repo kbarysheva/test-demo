@@ -5,7 +5,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.acme.dbo.restassured.EndPoint.*;
@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.is;
 public class RestAssuredAccountTest {
     private RequestSpecification givenRequest;
 
-    @BeforeAll
+    @BeforeEach
     public void setUpRestAssured() {
         givenRequest = given().
                 baseUri(BASE_URL).
